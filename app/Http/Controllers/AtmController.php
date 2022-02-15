@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class AtmController extends Controller
 {
+    public function index()
+    {
+        return view("atm.index");
+    }
+
     public function createToken()
     {
         return csrf_field();

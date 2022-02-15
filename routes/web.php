@@ -29,3 +29,5 @@ Route::post("bankTrading/depositMoney/{account_id}", "AtmController@depositMoney
 
 //預金の引き出し
 Route::post("bankTrading/withdrawal/{account_id}", "AtmController@withdrawal");
+
+Route::get("index", "AtmController@index");
