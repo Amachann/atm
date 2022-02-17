@@ -14,7 +14,7 @@ class AtmController extends Controller
     public function createToken()
     {
         return csrf_field();
-        //hct5VoHBrfx8ALX3iXmTRh47ipvcNF90D6WUt3MS
+        //8her1K6CDkz6r6AxEgw63Z1kmSwlIDT0KoJC8Ve2
     }
 
     public function accountOpen()
@@ -65,7 +65,7 @@ class AtmController extends Controller
 
         //口座の残高がリクエストされた金額よりも多いかを確認
         if ($account->deposit_balance >= $amount) {
-            //口座の残高に対してリクエsとされた金額を減算し保存
+            //口座の残高に対してリクエストされた金額を減算し保存
             $account->deposit_balance -= $amount;
             $account->save();
         }
