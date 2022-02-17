@@ -77,7 +77,7 @@ function depositMoney() {
             "X-CSRF-TOKEN": $("meta[name='csrf-token']").attr("content")
         },
         data: {
-            "amount": $("#depositAria").find("input[type='number']").val()
+            "amount": $("#depositArea").find("input[type='number']").val()
         }
     }).done(function(response) {
         console.log(response);
@@ -96,7 +96,7 @@ function withdrawal() {
             "X-CSRF-TOKEN": $("meta[name='csrf-token']").attr("content")
         },
         data: {
-            "amount": $("#withdrawalAria").find("input[type='number']").val()
+            "amount": $("#withdrawalArea").find("input[type='number']").val()
         }
     }).done(function(response) {
         console.log("残高は" + response.deposit_balance + "円です。");
